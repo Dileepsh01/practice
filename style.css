@@ -1,0 +1,82 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+    background-color: #14cdc8;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #box {
+    background-color: white;
+    width: 100%;
+    max-width: 700px; /* Set a maximum width for larger screens */
+    border-radius: 5px;
+    padding: 20px; /* Add some padding for better spacing on larger screens */
+  }
+  
+  #input_bar {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    font-weight: bold;
+    box-shadow: 0px 0px 2px grey;
+  }
+  
+  #to-do-box {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0; /* Remove default padding for the list */
+  }
+  
+  #to-do-box li {
+    position: relative;
+    background-color: rgb(53, 52, 52);
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 2px;
+    margin-top: 10px;
+    user-select: none;
+  }
+  
+  #to-do-box li i {
+    position: absolute;
+    right: 7px;
+    font-size: 20px;
+    top: 10px;
+  }
+  
+  .done {
+    text-decoration: line-through;
+    color: rgb(226, 26, 26);
+    background-color: rgb(168, 168, 172) !important;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    #box {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+    
+    #input_bar {
+      font-size: 16px; /* Reduce font size for smaller screens */
+    }
+    
+    #to-do-box li {
+      font-size: 14px; /* Reduce font size for smaller screens */
+    }
+  }
+  
